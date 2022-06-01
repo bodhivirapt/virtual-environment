@@ -11,12 +11,12 @@ function spin(){
 setInterval(spin, 10);
 
 
-myOtherBox.addEventListener('click', function(){
+myOtherBox.addEventListener('mouseenter', function(){
 	rotationSpeed = 0.01;
 	console.log('entered');
 });
 
-myOtherBox.addEventListener('click', function(){
+myOtherBox.addEventListener('mouseleave', function(){
 	rotationSpeed = 0.001;
 	console.log('left');
 });
@@ -31,7 +31,7 @@ myOtherBox.addEventListener('click', function(){
  var growspeed = 3;
 
  function grow(){
- 	myOtherBox.object3D.rotation.x *= growspeed;
+ 	myOtherBox.object3D.scale.x *= growspeed;
  	myOtherBox.object3D.scale.y *= growspeed;
  	myOtherBox.object3D.scale.z *= growspeed;
 	console.log(myOtherBox.object3D.scale);
